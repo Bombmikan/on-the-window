@@ -327,6 +327,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Enemy2.h" />
     <ClInclude Include="MyVector.h" />
     <ClInclude Include="Raindrop.h" />
     <ClInclude Include="stdafx.h" />
