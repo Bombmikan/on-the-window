@@ -60,7 +60,7 @@ public:
 		const Vec2 airResistanceForce(0, -(carSpeed * 1.0));
 
 		//合力 = 重力 + 空気抵抗
-		const Vec2 totalForce = /*gravity +*/ airResistanceForce + playerInputForce;
+		const Vec2 totalForce = gravity + airResistanceForce + playerInputForce;
 
 		//力を速度に加算(速度 = 現在の位置 + 力 * 時間)
 		m_velocity += totalForce * deltaTime;
@@ -80,10 +80,10 @@ public:
 	//描画処理
 	void draw() const
 	{
-		const s3d::Vec2 pos(m_position.x, m_position.y);
-		const s3d::Circle collider(pos, m_radius);
+		const Vec2 pos(m_position.x, m_position.y);
+		const Circle collider(pos, m_radius);
 
-		const s3d::Circle body(pos, m_radius);
+		const Circle body(pos, m_radius);
 		body.draw(ColorF(0.2, 0.6, 1.0, 0.8));
 
 		body.drawFrame(1.5, ColorF(1.0, 1.0, 1.0, 0.5));
