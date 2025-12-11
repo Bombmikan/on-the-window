@@ -62,7 +62,7 @@ void Main()
 		for (auto& e : enemies)
 		{
 			//プレイヤーの位置を取得し、敵の移動計算を行う
-			enemy.update(player.getPosition(), dt);
+			e.update(player.getPosition(), dt);
 		}
 		
 		//難易度上昇
@@ -73,7 +73,7 @@ void Main()
 		player.draw();
 		for (const auto& e : enemies)
 		{
-			enemy.draw();
+			e.draw();
 		}
 		
 
