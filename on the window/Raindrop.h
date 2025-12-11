@@ -80,10 +80,10 @@ public:
 	//描画処理
 	void draw() const
 	{
-		const s3d::Vec2 pos(m_position.x, m_position.y);
-		const s3d::Circle collider(pos, m_radius);
+		const Vec2 pos(m_position.x, m_position.y);
+		const Circle collider(pos, m_radius);
 
-		const s3d::Circle body(pos, m_radius);
+		const Circle body(pos, m_radius);
 		body.draw(ColorF(0.2, 0.6, 1.0, 0.8));
 
 		body.drawFrame(1.5, ColorF(1.0, 1.0, 1.0, 0.5));
