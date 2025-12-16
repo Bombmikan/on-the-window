@@ -66,7 +66,7 @@ public:
 	void draw() const
 	{
 		const Vec2 pos((float)m_pos.x, (float)m_pos.y);
-		const s3d::Circle c(pos, m_radius);
+		const Circle c(pos, m_radius);
 		c.draw(ColorF(1.0, 0.4, 0.4, 0.9));
 		c.drawFrame(1, Palette::White);
 	}
