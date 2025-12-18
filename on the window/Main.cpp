@@ -1,4 +1,5 @@
-﻿# include <Siv3D.hpp> // Siv3D v0.6.16 (描画や入力、時間管理のために利用します)
+﻿#if 0
+#include <Siv3D.hpp> // Siv3D v0.6.16 (描画や入力、時間管理のために利用します)
 #include "Raindrop.h"
 #include "Enemy.h"
 
@@ -82,3 +83,5 @@ void Main()
 		Print(U"Speed: {:.0f}"_fmt(carSpeed));
 	}
 }
+
+#endif
